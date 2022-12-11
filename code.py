@@ -17,12 +17,12 @@ data = numpy.array(data)
 x_data=numpy.c_[ numpy.ones(len(data)) , data[:,:-1] ]
 y_data=data[:,-1]
 
-#data correctiom
+#data correction
 x_data[0][1] = 1
 
 
 #parameter to minimize
-n_loop = 10000
+n_loop = 5000
 m,n = x_data.shape  #nnumber of examples, number of features)
 w = numpy.zeros(n) #parameter
 
